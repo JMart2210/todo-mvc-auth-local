@@ -42,10 +42,10 @@ app.use(flash())
 app.use('/', mainRoutes)
 app.use('/todos', todoRoutes)
  
-app.listen(2121, ()=>{
-    console.log('Server is running, you better catch it!')
-})    
-// Commented out to test server before I get DB url
-// app.listen(process.env.PORT, ()=>{
+// app.listen(2121, ()=>{
 //     console.log('Server is running, you better catch it!')
 // })    
+// Commented out to test server before I get DB url
+app.listen(process.env.PORT, ()=>{
+    console.log('Server is running, you better catch it!')
+})    
